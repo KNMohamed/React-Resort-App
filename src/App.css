@@ -156,12 +156,17 @@ h6 {
 }
 /* end of navbar */
 /* Hero */
-.defaultHero{
+.defaultHero,
+.roomsHero {
   min-height: calc(100vh - 66px);
   background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.roomsHero {
+  background-image: url("./images/room-2.jpeg");
+  min-height: 60vh;
 }
 /* End of Hero */
 /* Banner */
@@ -247,7 +252,6 @@ h6 {
 }
 .services h6 {
   letter-spacing: var(--mainSpacing);
-  text-transform: capitalize;
 }
 .services p {
   width: 80%;
@@ -309,6 +313,10 @@ h6 {
   display: block;
   transition: var(--mainTransition);
 }
+.roomslist .img-container img {
+  max-height: 150px;
+}
+
 .price-top {
   position: absolute;
   top: 0;
@@ -470,6 +478,12 @@ h6 {
 .form-group {
   text-transform: capitalize;
 }
+@media (max-width: 1024px){
+  .form-group:last-child {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+}
 .form-group label {
   display: block;
   letter-spacing: var(--mainSpacing);
@@ -482,6 +496,7 @@ h6 {
 }
 .size-inputs {
   display: flex;
+  justify-content: space-between;
 }
 .size-input {
   width: 40%;
@@ -494,7 +509,7 @@ h6 {
   display: inline-block;
   font-size: 0.8rem;
   margin-left: 0.5rem;
-}
+} 
 @media screen and (min-width: 776px) {
   .filter-form {
     width: 70vw;
