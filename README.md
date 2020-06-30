@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+View Live at: https://react-resort-mockup.netlify.app
 
 ## Available Scripts
 
